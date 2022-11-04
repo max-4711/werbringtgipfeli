@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gipfeliapp", "gipfeliapp\gipfeliapp.csproj", "{3C1EBFDD-E180-41CC-AC9B-020ECE7DE42F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C1EBFDD-E180-41CC-AC9B-020ECE7DE42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1EBFDD-E180-41CC-AC9B-020ECE7DE42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1EBFDD-E180-41CC-AC9B-020ECE7DE42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1EBFDD-E180-41CC-AC9B-020ECE7DE42F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E46A76C5-FE03-40BF-B4BE-08C752533582}
+	EndGlobalSection
+EndGlobal
