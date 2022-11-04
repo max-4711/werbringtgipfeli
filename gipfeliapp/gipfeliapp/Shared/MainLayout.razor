@@ -6,6 +6,16 @@
     <main>
         <div class="top-row px-4">
             <a href="admin">Admin-Login</a>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">🇩🇪</a></li>
+                    <li><a class="dropdown-item" href="#">🇨🇭</a></li>
+                </ul>
+            </div>
         </div>
 
         <article class="content px-4">
@@ -13,3 +23,10 @@
         </article>
     </main>
 </div>
+
+@code {
+    private void ChangeLocale()
+    {
+
+    }
+}
