@@ -1,14 +1,30 @@
 ﻿@using System.Globalization;
 
 <div class="alert alert-secondary mt-4">
-    <span class="oi oi-pencil me-2" aria-hidden="true"></span>
-    <strong>@Title</strong>
 
-    <span class="text-nowrap">
-        Please take our
-        <a target="_blank" class="font-weight-bold link-dark" href="https://go.microsoft.com/fwlink/?linkid=2149017">brief survey</a>
-    </span>
-    and tell us what you think.
+    @if (string.IsNullOrEmpty(this.Title))
+    {
+        <span class="oi oi-close me-2" aria-hidden="true"></span>
+
+
+        <span class="text-nowrap">
+            Es bringt noch 
+            <strong>@Title</strong>
+            Gipfeli! 😞
+        </span>
+    }
+    else
+    {
+        <span class="oi oi-checkmark me-2" aria-hidden="true"></span>
+
+
+        <span class="text-nowrap">
+            Gipfeli bringt 
+            <strong>@Title</strong>
+            😊
+        </span>
+    }
+
 </div>
 
 @code {
