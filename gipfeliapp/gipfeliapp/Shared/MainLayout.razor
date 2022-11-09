@@ -12,8 +12,8 @@
                     Dropdown button
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">🇩🇪</a></li>
-                    <li><a class="dropdown-item" href="#">🇨🇭</a></li>
+                    <li><a class="dropdown-item" href="" @onclick='@(() => this.ChangeCulture("de-DE"))' @onclick:preventDefault>🇩🇪</a></li>
+                    <li><a class="dropdown-item" href="" @onclick='@(() => this.ChangeCulture("de-CH"))' @onclick:preventDefault>🇨🇭</a></li>
                 </ul>
             </div>
         </div>
@@ -25,8 +25,11 @@
 </div>
 
 @code {
-    private void ChangeLocale()
+    private void ChangeCulture(string langCode)
     {
-
+        //TODO: Save to cookie; Cookie content should then be:
+        //c=de-DE|uic=de-DE
+        //respectively
+        //c=de-CH|uic=de-CH
     }
 }

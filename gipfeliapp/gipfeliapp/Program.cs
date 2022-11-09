@@ -28,4 +28,12 @@ app.UseRouting();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
+//https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-6.0#localization-middleware
+//MS Learn: The localization middleware must be configured before any middleware which might check the request culture (for example, app.UseMvcWithDefaultRoute())
+string[] supportedCultures = new[] { "de-DE", "de-CH" };
+app.UseRequestLocalization(new RequestLocalizationOptions() //Default: Query > Cookie > Accept-Language Header
+    .SetDefaultCulture(supportedCultures[0])
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures));
+
 app.Run();
